@@ -1,0 +1,36 @@
+user and server 
+types of relationships
+
+
+
+1) user ->server
+
+	- login/logoff
+	- status
+
+2) server -> user
+
+	- online/offline  //server should tell other ppl when someone logs on.
+	
+3) user -> user
+
+	- direct messages
+	- broadcast messages (to a group of people)
+	
+
+commands: (client sends these commands to server)
+
+	login <user> <password>
+	
+	logoff
+	
+	msg <user> body
+	ex.  pat:  "msg james good morning."
+	received james: "msg pat: good morning."
+	
+	#topic <-- chatroom/group chat
+	join #topic
+	leave #topic
+	
+	msg #topic body
+	received james: "msg #topic pat: good morning."
